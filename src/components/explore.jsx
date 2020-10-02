@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class Nav extends Component {
+class Explore extends Component {
     state = {  }
     render() { 
         return (
-            <p>nav</p>
+            <p>explore</p>
         );
     }
 }
  
-export default Nav;
+export default Explore;
