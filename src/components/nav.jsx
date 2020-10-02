@@ -4,7 +4,10 @@ class Nav extends Component {
     state = {  }
     render() { 
         return (
-            <p>nav</p>
+            <nav>
+                <a href="/home">Home</a>
+                <a href="/explore">Explore</a>
+            </nav>
         );
     }
 }

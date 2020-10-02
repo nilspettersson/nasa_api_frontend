@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import Nav from "../nav"
 
 class Explore extends Component {
     state = {  }
     render() { 
         return (
-            <p>explore</p>
+            <div>
+                <Nav page={"explore"} />
+                <p>explore</p>
+            </div>
+            
         );
     }
 }
