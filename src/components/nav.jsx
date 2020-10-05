@@ -5,8 +5,9 @@ class Nav extends Component {
     render() { 
         return (
             <nav>
-                <a href="/home">Home</a>
-                <a href="/explore">Explore</a>
+                <a className="title" href="/home">NASA EXPLORER</a>
+                <a className="link" href="/home">Home</a>
+                <a className="link" href="/explore">Explore</a>
             </nav>
         );
     }

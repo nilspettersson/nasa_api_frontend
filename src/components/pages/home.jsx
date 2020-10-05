@@ -9,7 +9,7 @@ class Home extends Component {
 
 
     componentDidMount(){
-        fetch("https://api.nasa.gov/planetary/apod?api_key=3lAiOi562emtnie1O6cdo43rupWcM8idQryj7g5E")
+        fetch("https://api.nasa.gov/planetary/apod?date=2020-09-06&api_key=3lAiOi562emtnie1O6cdo43rupWcM8idQryj7g5E")
             .then(res => res
             .json()).then(json => {
                 console.log(json);
@@ -24,7 +24,7 @@ class Home extends Component {
         return (
             <div>
                 <Nav page={"home"} />
-                {this.showImage()}
+                {/*this.showImage()*/}
             </div>
             
         );
