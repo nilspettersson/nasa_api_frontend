@@ -3,6 +3,22 @@
   padding: 0px;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+a{
+  color: #242424;
+}
+h1{
+  color: #242424;
+  font-size: 60px;
+}
+h3{
+  color: #353535;
+  font-size: 34px;
+}
+
 nav{
   display: flex;
   justify-content: left;
@@ -14,8 +30,8 @@ nav{
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
-  color: #425BB5;
   padding: 12px 50px;
+  color: #425BB5;
 }
 .link{
   font-size: 20px;
@@ -26,4 +42,45 @@ nav{
 .link:hover{
   transition-duration: 100ms;
   color: #425BB5;
+}
+
+header{
+  padding: 200px;
+  text-align: center;
+}
+
+header .buttons{
+  margin: 50px;
+}
+
+.primary-button{
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  background: #425BB5;
+  margin: 14px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: solid #425BB5 3px;
+}
+.primary-button:hover{
+  cursor: pointer;
+  transition-duration: 100ms;
+  background: #32468b;
+  border: solid #32468b 3px;
+}
+.secondary-button{
+  font-size: 20px;
+  display: inline-block;
+  color: #252525;
+  margin: 14px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: solid #425BB5 3px;
+}
+.secondary-button:hover{
+  color: #32468b;
+  cursor: pointer;
+  transition-duration: 100ms;
+  border: solid #32468b 3px;
 }

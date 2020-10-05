@@ -24,6 +24,18 @@ class Home extends Component {
         return (
             <div>
                 <Nav page={"home"} />
+
+                <header>
+                    <h1 className="header">NASA api Explorer</h1>
+                    <h3 className="header2">Explore NASA images and more</h3>
+                    <div className="buttons">
+                        <a className="primary-button">Explore</a>
+                        <a className="secondary-button">Image of the day</a>
+                    </div>
+                    
+                </header>
+                
+
                 {/*this.showImage()*/}
             </div>
             
