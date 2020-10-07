@@ -15,8 +15,12 @@ h1{
   font-size: 60px;
 }
 h3{
-  color: #353535;
+  color: #3f3f3f;
   font-size: 34px;
+}
+h4{
+  color: #3f3f3f;
+  font-size: 26px;
 }
 
 nav{
@@ -83,4 +87,44 @@ header .buttons{
   cursor: pointer;
   transition-duration: 100ms;
   border: solid #32468b 3px;
+}
+
+
+.page-header{
+  text-align: center;
+  background: #32468b;
+}
+.page-header h3{
+  color: white;
+  padding: 30px;
+}
+
+
+.todayImage{
+  padding: 10px 0px;
+}
+.todayImage h4{
+  text-align: center;
+}
+.todayImage img{
+  width: 48%;
+  height: auto;
+}
+.todayImage p{
+  margin: 0px;
+  width: 48%;
+}
+
+.todayImage > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 600px;
+}
+
+
+/*important last*/
+.padding{
+  padding-left: 160px;
+  padding-right: 160px;
 }

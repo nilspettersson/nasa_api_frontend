@@ -5,17 +5,21 @@ class Home extends Component {
     state = {
         imgLoaded:false,
         imgUrl:"",
+        title:"",
+        explanation:"",
     }
 
 
     componentDidMount(){
-        fetch("https://api.nasa.gov/planetary/apod?date=2020-09-06&api_key=3lAiOi562emtnie1O6cdo43rupWcM8idQryj7g5E")
+        fetch("https://api.nasa.gov/planetary/apod?api_key=3lAiOi562emtnie1O6cdo43rupWcM8idQryj7g5E")
             .then(res => res
             .json()).then(json => {
                 console.log(json);
                 this.setState({
                     imgLoaded: true,
-                    imgUrl: json.url
+                    imgUrl: json.url,
+                    title: json.title,
+                    explanation: json.explanation
                 })
             });
     }
@@ -35,8 +39,13 @@ class Home extends Component {
                     
                 </header>
                 
+                <div className="page-header">
+                    <h3>Image of the day</h3>
+                </div>
+                
+                {this.showImage()}
 
-                {/*this.showImage()*/}
+                
             </div>
             
         );
@@ -45,7 +54,15 @@ class Home extends Component {
     showImage(){
         if(this.state.imgLoaded == true){
             return (
-                <img src={this.state.imgUrl}/>
+                <div className="todayImage padding">
+                    <h4>{this.state.title}</h4>
+                    <div>
+                        <img src={this.state.imgUrl}/>
+                        <p>{this.state.explanation}</p>
+                    </div>
+                    
+                </div>
+                
             )
         }
         return null
