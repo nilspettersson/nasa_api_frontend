@@ -7,7 +7,15 @@ class Explore extends Component {
         return (
             <div>
                 <Nav page={"explore"} />
-                <p>explore</p>
+
+                <div className="menu padding">
+                    <div className="search-container">
+                        <input className="search" type="text"/>
+                        <img src="%PUBLIC_URL%/../res/search.svg"/>
+                    </div>
+                    
+                </div>
+
             </div>
             
         );

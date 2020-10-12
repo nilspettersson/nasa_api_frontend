@@ -127,6 +127,38 @@ header .buttons{
 }
 
 
+
+
+.menu{
+  padding-top: 100px;
+}
+
+.search-container{
+  float: right;
+  position: relative;
+}
+
+.search {
+  border: #242424 solid 1px;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #242424;
+  padding: 4px 4px;
+}
+input[type=text]:focus {
+  transition-duration: 160ms;
+  outline: none;
+  border: 1px solid #3a60e9b7;
+  box-shadow: 0px 0px 3px #3a60e9b7;
+}
+
+.search-container img{
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  filter:opacity(0.7);
+}
+
 /*important last*/
 .padding{
   padding-left: 160px;
