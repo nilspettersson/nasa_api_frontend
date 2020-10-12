@@ -43,7 +43,11 @@ class Explore extends Component {
         if(this.state.loaded){
             return(
                 <div className="grid padding">
-                    {this.state.images.map(image => <img src={image.links[0].href} />)}
+                    {this.state.images.map(image => 
+                    <div className="image">
+                        <img src={image.links[0].href} />
+                    </div>
+                    )}
                 </div>
             )
         }
