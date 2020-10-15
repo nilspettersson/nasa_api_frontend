@@ -6,6 +6,7 @@ class Image extends Component {
         return (
             <div className="image">
                 <img src={this.props.href} />
+                <p className="image-text">{this.props.title}</p>
             </div>
         );
     }

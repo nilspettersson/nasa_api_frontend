@@ -10,7 +10,7 @@ class Explore extends Component {
     }
 
     componentDidMount(){
-        fetch("https://images-api.nasa.gov/search?q=apollo%2011&media_type=image")
+        fetch("https://images-api.nasa.gov/search?media_type=image")
             .then(res => res
             .json()).then(json => {
                 console.log(json.collection.items);
@@ -70,6 +70,7 @@ class Explore extends Component {
                     <Image 
                         key={index} 
                         href={image.links[0].href}
+                        title={image.data[0].title}
                     />
                     )}
                 </div>

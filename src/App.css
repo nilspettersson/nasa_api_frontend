@@ -178,19 +178,39 @@ input[type=text]:focus {
 }
 
 .image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   overflow: hidden;
+  text-align: center;
 }
+
 .grid img{
   width: 100%;
   height: 16vw;
   object-fit: cover;
 }
-.grid img:hover{
-  transition-duration: 400ms;
+
+.image-text{
+  display: none;
+  position: absolute;
+  bottom: 4px;
+  color: white;
+  font-size: 20px;
+}
+
+.image:hover img{
+  transition-duration: 600ms;
   cursor: pointer;
-  filter: brightness(0.8);
+  filter: brightness(0.4);
   transform: scale(1.1);
 }
+.image:hover .image-text{
+  display: inline;
+}
+
+
 
 /*important last*/
 .padding{
