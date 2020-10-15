@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from "../nav"
+import Image from "../image";
 
 class Explore extends Component {
     state = {
@@ -66,9 +67,10 @@ class Explore extends Component {
             return(
                 <div className="grid padding">
                     {this.state.images.map((image, index) => 
-                    <div key={index} className="image">
-                        <img src={image.links[0].href} />
-                    </div>
+                    <Image 
+                        key={index} 
+                        href={image.links[0].href}
+                    />
                     )}
                 </div>
             )
