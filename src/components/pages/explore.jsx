@@ -71,6 +71,7 @@ class Explore extends Component {
                         key={index} 
                         href={image.links[0].href}
                         title={image.data[0].title}
+                        date={image.data[0].date_created}
                     />
                     )}
                 </div>

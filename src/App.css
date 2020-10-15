@@ -192,10 +192,19 @@ input[type=text]:focus {
   object-fit: cover;
 }
 
-.image-text{
+.image-title{
   display: none;
   position: absolute;
-  bottom: 4px;
+  top: 0px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+}
+.image-date{
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 20px;
   color: white;
   font-size: 20px;
 }
@@ -203,10 +212,13 @@ input[type=text]:focus {
 .image:hover img{
   transition-duration: 600ms;
   cursor: pointer;
-  filter: brightness(0.4);
+  filter: brightness(0.3);
   transform: scale(1.1);
 }
-.image:hover .image-text{
+.image:hover .image-title{
+  display: inline;
+}
+.image:hover .image-date{
   display: inline;
 }
 

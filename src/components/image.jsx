@@ -6,7 +6,8 @@ class Image extends Component {
         return (
             <div className="image">
                 <img src={this.props.href} />
-                <p className="image-text">{this.props.title}</p>
+                <p className="image-title">{this.props.title}</p>
+                <p className="image-date">{this.props.date.substring(0, 10)}</p>
             </div>
         );
     }
