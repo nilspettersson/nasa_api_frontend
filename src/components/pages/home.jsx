@@ -38,7 +38,8 @@ class Home extends Component {
                         <Link 
                             className="secondary-button" 
                             smooth={true}
-                            duration={500} 
+                            duration={500}
+                            offset={-180}
                             to="todayImage">Image of the day
                         </Link>
                     </div>
