@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from "../nav"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Home extends Component {
     state = {
@@ -34,7 +35,12 @@ class Home extends Component {
                     <h3 className="header2">Explore NASA images and more</h3>
                     <div className="buttons">
                         <a href="/explore" className="primary-button">Explore</a>
-                        <a className="secondary-button">Image of the day</a>
+                        <Link 
+                            className="secondary-button" 
+                            smooth={true}
+                            duration={500} 
+                            to="todayImage">Image of the day
+                        </Link>
                     </div>
                     
                 </header>
@@ -54,7 +60,7 @@ class Home extends Component {
     showImage(){
         if(this.state.imgLoaded == true){
             return (
-                <div className="todayImage padding">
+                <div id="todayImage" className="todayImage padding">
                     <h4>{this.state.title}</h4>
                     <div>
                         <img src={this.state.imgUrl}/>
