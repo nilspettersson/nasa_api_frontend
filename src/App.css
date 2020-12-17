@@ -272,6 +272,13 @@ input[type=text]:focus {
     padding-right: 100px;
   }
 
+  h1{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 28px;
+  }
+
 }
 
 @media only screen and (max-width: 850px){
@@ -300,6 +307,42 @@ input[type=text]:focus {
   .search {
     font-size: 16px;
     width: 200px;
+  }
+
+  header{
+    padding: 200px 20px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 18px;
+  }
+
+  header .buttons{
+    margin: 50px;
+  }
+
+  .primary-button{
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    color: white;
+    background: #425BB5;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: solid #425BB5 3px;
+  }
+  .secondary-button{
+    font-size: 14px;
+    display: inline-block;
+    color: #252525;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: solid #425BB5 3px;
   }
 
 }
