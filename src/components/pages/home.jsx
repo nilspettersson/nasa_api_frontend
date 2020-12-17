@@ -59,6 +59,7 @@ class Home extends Component {
     }
 
     showImage(){
+        console.log(this.state.imgUrl);
         if(this.state.imgLoaded == true){
             return (
                 <div id="todayImage" className="todayImage padding">

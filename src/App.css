@@ -108,7 +108,7 @@ header .buttons{
 
 .todayImage{
   background: #222e5c;
-  padding: 0px 0px;
+  padding-bottom: 30px;
 }
 .todayImage h4{
   color: white;
@@ -117,20 +117,19 @@ header .buttons{
   padding-bottom: 30px;
 }
 .todayImage img{
-  width: 48%;
+  width: 49%;
   height: auto;
 }
 .todayImage p{
   color: white;
   margin: 0px;
-  width: 48%;
+  width: 49%;
 }
 
 .todayImage > div{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 600px;
 }
 
 
@@ -200,6 +199,7 @@ input[type=text]:focus {
 }
 
 .image-title{
+  text-align: left;
   display: none;
   position: absolute;
   top: 0px;
@@ -210,7 +210,7 @@ input[type=text]:focus {
 .image-date{
   display: none;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   right: 20px;
   color: white;
   font-size: 20px;
@@ -235,4 +235,61 @@ input[type=text]:focus {
 .padding{
   padding-left: 160px;
   padding-right: 160px;
+}
+
+@media only screen and (max-width: 1600px){
+  .image-title{
+    display: none;
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  .image-date{
+    display: none;
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .grid{
+    padding-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+  }
+
+  .grid img{
+    height: 26vw;
+    object-fit: cover;
+  }
+
+  .padding{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 850px){
+  .grid{
+    padding-top: 30px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    
+  }
+
+  .grid img{
+    height: 48vw;
+    object-fit: cover;
+  }
+
+  .padding{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
 }
