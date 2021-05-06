@@ -34,7 +34,7 @@ class Home extends Component {
                     <h1 className="header">NASA api Explorer</h1>
                     <h3 className="header2">Explore NASA images and more</h3>
                     <div className="buttons">
-                        <a href="/explore" className="primary-button">Explore</a>
+                        <a href="/nasa_api_frontend#explore" className="primary-button">Explore</a>
                         <Link 
                             className="secondary-button" 
                             smooth={true}
