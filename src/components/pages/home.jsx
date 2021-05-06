@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from "../nav"
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 class Home extends Component {
     state = {
@@ -59,7 +59,6 @@ class Home extends Component {
     }
 
     showImage(){
-        console.log(this.state.imgUrl);
         if(this.state.imgLoaded == true){
             return (
                 <div id="todayImage" className="todayImage padding">
@@ -68,7 +67,6 @@ class Home extends Component {
                         <img src={this.state.imgUrl}/>
                         <p>{this.state.explanation}</p>
                     </div>
-                    
                 </div>
                 
             )
