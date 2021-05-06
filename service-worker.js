@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nasa_api_frontend/precache-manifest.881486ef0bb56c82dd43d9bdf9172f97.js"
+  "/nasa_api_frontend/precache-manifest.6cbd24668450731d57d9822e078b08dc.js"
 );
 
 self.addEventListener('message', (event) => {
