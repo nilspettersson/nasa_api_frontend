@@ -133,8 +133,6 @@ header .buttons{
 }
 
 
-
-
 .menu{
   padding-top: 140px;
   display: flex;
@@ -153,12 +151,12 @@ header .buttons{
 }
 
 .search {
-  border: #242424 solid 1px;
   border-radius: 3px;
   font-size: 20px;
-  color: #242424;
   padding: 6px 6px;
   width: 300px;
+  color: #242424;
+  border: #242424 solid 1px;
 }
 input[type=text]:focus {
   transition-duration: 160ms;
@@ -177,10 +175,10 @@ input[type=text]:focus {
 
 .grid{
   padding-top: 30px;
-  background: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  background: rgb(255, 255, 255);
 }
 
 .image{
@@ -204,21 +202,20 @@ input[type=text]:focus {
   position: absolute;
   top: 0px;
   left: 20px;
-  color: white;
   font-size: 20px;
+  color: white;
 }
 .image-date{
   display: none;
   position: absolute;
   bottom: 0px;
   right: 20px;
-  color: white;
   font-size: 20px;
+  color: white;
 }
 
 .image:hover img{
   transition-duration: 600ms;
-  cursor: pointer;
   filter: brightness(0.3);
   transform: scale(1.1);
 }
@@ -282,6 +279,10 @@ input[type=text]:focus {
 }
 
 @media only screen and (max-width: 850px){
+  nav .title {
+    font-size: 26px;
+  }
+
   .grid{
     padding-top: 30px;
     grid-template-columns: 1fr;
