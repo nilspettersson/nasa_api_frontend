@@ -7,11 +7,11 @@ import NotFound from "./components/pages/notFound"
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="/" component={Home}/>
-        <Route path="/home" component={Home}/>
-        <Route path="/explore" component={Explore}/>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/home" component={Home}/>
+        <Route exact path="/explore" component={Explore}/>
         <Route component={NotFound}/>
       </Switch>
     </Router>
